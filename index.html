@@ -3,9 +3,13 @@
     <head>
         <link href="css/style.css" rel="stylesheet" />
     </head>
-    <body>
+    <body onload="load();">
         <video id="video" src="media/video.mp4"></video>
-		<input value="Play" type="button" onclick="PlayPause()" id="play/pause"/>
+		<div id="controls">
+			<input value="Play" type="button" onclick="PlayPause()" id="play"/>
+			<input type="range" value="0" min="0" id="range" />
+			<input type="range" value="0" id="volume" min="0" max="100" />
+		</div>
 		<script src="js/script.js" type="text/javascript"></script>
     </body>
 </html>
