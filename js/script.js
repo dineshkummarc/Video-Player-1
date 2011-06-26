@@ -13,10 +13,13 @@ volume.addEventListener("change",setVolume,false);
 
 function load() {
 	slider.max = video.duration;
-	volume.value = video.volume*100;
+	
 	/*Adjust Width*/
 	document.getElementById('controls').style.width = video.clientWidth;
-	document.getElementById('controls').style.top = "-" + document.getElementById('controls').clientHeight;
+	if ( localStorage.getItem('time') ) {
+    	video.currentTime = localStorage.getItem('time'); 
+  	}
+	volume.value = video.volume*100;
 }
 
 function updatePlayButton(){
@@ -42,9 +45,12 @@ function setTime(){
 }
 
 function setVolume(){
-	video.volume = volume.value/100
+	video.volume = volume.value/100;
 }
 
 function updateTime(){
 	slider.value =  video.currentTime;
+	if (Modernizr.localstorage) {
+		localStorage.setItem('time', video.currentTime);
+	} 
 }

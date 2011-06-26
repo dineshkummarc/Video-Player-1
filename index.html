@@ -2,13 +2,14 @@
 <html>
     <head>
         <link href="css/style.css" rel="stylesheet" />
+		<script src="js/modernizr.js"></script>
     </head>
     <body onload="load();">
         <video id="video" src="media/video.mp4"></video>
 		<div id="controls">
 			<input value="Play" type="button" onclick="PlayPause()" id="play"/>
 			<input type="range" value="0" min="0" id="range" />
-			<span>Volume</span><input type="range" value="0" id="volume" min="0" max="100" />
+			<input type="range" value="0" id="volume" min="0" max="100" />
 		</div>
 		<script src="js/script.js" type="text/javascript"></script>
     </body>
