@@ -1,6 +1,6 @@
 #controls {
 	display:block;
-	background:rgba(0,0,0,.4);
+	background:rgba(0,0,0,.8);
 	position:relative;
 	color:white;
 	height:30px;
@@ -39,7 +39,8 @@
 #volume {
 	position:absolute;
 	right:1.5%;
-	width:16%;
+	width:23%;
+	margin-left:5px;
 	top:7.5px;
 	margin:0;
 	-webkit-appearance:none;
@@ -52,12 +53,4 @@
 	width:5px;
 	height:15px;
 	background:rgb(250,250,250);
-}
-
-#controls span {
-	font-family: 'Lucida Grande';
-	font-size:11px;
-	position:absolute;
-	right:17.5%;
-	top:8.5px;
 }
