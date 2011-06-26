@@ -30,9 +30,9 @@
 	width:60%;
 	-webkit-appearance:none;
 	background:rgba(0,0,0,.5);
-	height:15px;
+	height:10px;
 	position:absolute;
-	top:7.5px;
+	top:10px;
 	margin:0;
 	margin-left:10px;
 }
@@ -58,11 +58,11 @@
 	right:1.5%;
 	width:23%;
 	margin-left:5px;
-	top:7.5px;
+	top:10px;
 	margin:0;
 	-webkit-appearance:none;
 	background:rgba(0,0,0,.5);
-	height:15px;
+	height:10px;
 }
 
 #volume::-webkit-slider-thumb {
