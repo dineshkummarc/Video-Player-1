@@ -14,8 +14,16 @@
 	padding:0px;
 	border:none;
 	width:10%;
-	background:rgba(0,0,0,.6);
-	color:white;
+	background: #efefef;
+	background: -moz-linear-gradient(top, #efefef 0%, #d8d8d8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#d8d8d8));
+	background: -webkit-linear-gradient(top, #efefef 0%,#d8d8d8 100%);
+	background: -o-linear-gradient(top, #efefef 0%,#d8d8d8 100%);
+	background: -ms-linear-gradient(top, #efefef 0%,#d8d8d8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#d8d8d8',GradientType=0 );
+	background: linear-gradient(top, #efefef 0%,#d8d8d8 100%);
+	color:black;
+	border-radius:25px;
 }
 
 #range {
